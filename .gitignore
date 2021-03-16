@@ -1,0 +1,12 @@
+/node_modules
+/src/firebase
+/src/react-app-env.d.ts
+/src/reportWebVitals.js
+/build
+.DS_Store
+/public
+.firebase
+/functions
+/firebase*
+/firestore*
+/storage.rules

@@ -1,0 +1,23 @@
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.centerLeft {
+  text-align: left;
+  display: inline-block;
+}
+
+.space-s {
+  height: 12px;
+}
+.space-m {
+  height: 20px;
+}
+.space-l {
+  height: 32px;
+}
+
+.u-display-none {
+  display: none;
+}
