@@ -31,12 +31,8 @@ export const ArticleCard = (props) => {
         <CardContent className={classes.content}>
           <CardActionArea>
             <div onClick={() => dispatch(push("/article/" + props.id))}>
-              <Typography>
-                更新日：{props.update}　　作成日：{props.date}
-              </Typography>
-              <Typography>
-                カテゴリー：{props.category}　　投稿者：{props.name}
-              </Typography>
+              <Typography>更新日：{props.update}</Typography>
+              <Typography>カテゴリー：{props.category}</Typography>
               <Typography>
                 <h4>記事名：{props.title}</h4>
               </Typography>

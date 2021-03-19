@@ -4,6 +4,7 @@ import { push } from "connected-react-router";
 
 const articlesRef = db.collection("articles");
 
+/* 削除は危険と判断し、一旦廃止。
 export const deleteArticles = (id) => {
   return async (dispatch, getState) => {
     articlesRef
@@ -18,6 +19,7 @@ export const deleteArticles = (id) => {
       });
   };
 };
+*/
 
 export const fetchArticles = (category) => {
   return async (dispatch) => {
@@ -63,7 +65,7 @@ export const saveArticle = (id, name, title, content, images, category) => {
         dispatch(push("/admin"));
       })
       .catch(() => {
-        alert("記事の投稿に失敗しました。ぽてに報告してください。");
+        alert("記事の投稿に失敗しました。");
         dispatch(push("/admin"));
       });
   };

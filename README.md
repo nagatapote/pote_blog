@@ -1,9 +1,15 @@
-# ぽてぶろぐ。
+# blog
 
-https://pote-blog.web.app
+## url
 
-## 使用技術
+https://nagatapote.work
+
+## usage technique
 
 React(HTML,CSS,JavaScript)
 
-Firebase(Hosting,Authentication,Firestore,Storage,)
+React Redux
+
+Material-UI
+
+Firebase(Hosting,Authentication,Firestore,Storage)

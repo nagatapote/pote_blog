@@ -9,6 +9,14 @@ import { ImageArea } from "./ImageArea";
 import { saveArticle } from "redux/articles/operations";
 import { TextInput, SelectBox } from "components/index";
 import { db } from "firebase/index";
+import "assets/markdown.css";
+import hljs from "highlight.js/lib/core";
+import xml from "highlight.js/lib/languages/xml";
+import javascript from "highlight.js/lib/languages/javascript";
+import "highlight.js/styles/github.css";
+
+hljs.registerLanguage("xml", xml);
+hljs.registerLanguage("javascript", javascript);
 
 export const AdminArticleEdit = () => {
   const dispatch = useDispatch();
@@ -61,6 +69,11 @@ export const AdminArticleEdit = () => {
     },
     [setContent]
   );
+
+  useEffect(() => {
+    hljs.initHighlighting();
+    hljs.initHighlighting.called = false;
+  });
 
   useEffect(() => {
     if (id !== "") {
@@ -145,7 +158,10 @@ export const AdminArticleEdit = () => {
         <div className="space-l" />
         <h1 className="center">記事投稿プレビュー</h1>
         <h2>記事名：{title}</h2>
-        <span dangerouslySetInnerHTML={{ __html: marked(content) }} />
+        <span
+          className="markdown"
+          dangerouslySetInnerHTML={{ __html: marked(content) }}
+        />
         <div className="space-l" />
       </div>
       <div className="center">

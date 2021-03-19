@@ -34,10 +34,10 @@ export const AdminArticleCard = (props) => {
               onClick={() => dispatch(push("/admin/articleEdit/" + props.id))}
             >
               <Typography>
-                更新日：{props.update}　　作成日：{props.date}
+                更新日：{props.update} 作成日：{props.date}
               </Typography>
               <Typography>
-                カテゴリー：{props.category}　　投稿者：{props.name}
+                カテゴリー：{props.category} 投稿者：{props.name}
               </Typography>
               <Typography>
                 <h4>記事名：{props.title}</h4>
