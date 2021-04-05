@@ -2,7 +2,9 @@
 
 ## url
 
-https://nagatapote.work
+Not currently used
+
+https://pote-blog.web.app/
 
 ## usage technique
 

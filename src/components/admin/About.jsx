@@ -14,7 +14,7 @@ export const About = () => {
           <br />
           だいたい笑ってるので真剣なときは怖い(サイコパス)と言われます。笑
           <br />
-          趣味はゲームで、ボードゲームや格ゲーなどの対戦ゲームが好きです。
+          趣味は、ボードゲームです。
           <br />
           仲良くしてくれる人は、以下をフォロー！
           <br />
@@ -30,14 +30,22 @@ export const About = () => {
           </li>
         </p>
         <div className="center">
-          <h2>使用技術</h2>
+          <h2>Skills</h2>
         </div>
-        <p>このブログに関しては以下です。</p>
+        <p>最近のブーム</p>
+        <li>React(HTML,CSS,TypeScript)</li>
+        <li>Firebase(Hosting,Authentication,Firestore,Storage)</li>
+        <p>興味あるもの(ちょっとだけ触れているもの)</p>
+        <li>Nextjs(HTML,CSS,TypeScript)</li>
+        <li>Nestjs(TypeScript)</li>
+        <li>AWS</li>
+        <li>GitHub Action</li>
+        <p>このブログに関して</p>
         <li>React(HTML,CSS,JavaScript)</li>
         <li>React-Redux</li>
         <li>Material-UI</li>
         <li>Firebase(Hosting,Authentication,Firestore,Storage)</li>
-        <p>以下も仕事関係で扱ってます。</p>
+        <p>仕事</p>
         <li>Linux</li>
         <li>LDAP</li>
         <li>OracleDB(SQL)</li>

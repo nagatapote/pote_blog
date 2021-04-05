@@ -143,7 +143,7 @@ export const Header = () => {
     <div className={classes.root}>
       <AppBar position="fixed" className={classes.menuBar}>
         <Toolbar>
-          <h3 onClick={() => dispatch(push("/"))}>ぽてぶろぐ。</h3>
+          <h2 onClick={() => dispatch(push("/"))}>ぽてぶろぐ。</h2>
           <IconButton
             className={classes.iconButtons}
             onClick={handleDrawerOpen}

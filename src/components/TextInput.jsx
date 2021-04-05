@@ -6,7 +6,7 @@ const useStyles = makeStyles({
     width: "80%",
   },
   half: {
-    width: "50%",
+    width: "60%",
   },
 });
 
